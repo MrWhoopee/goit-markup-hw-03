@@ -103,10 +103,15 @@ button {
   max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
   height: 100%;
 }
 
 /* ====================  HEADER SECTION ==================== */
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container {
   display: flex;
   align-items: center;
@@ -116,6 +121,7 @@ button {
 }
 
 .wb_link {
+  margin-right: 76px;
   display: flex;
   align-items: center;
   font-weight: 700;
@@ -134,6 +140,7 @@ button {
 .navigation {
   display: flex;
   gap: 76px;
+  align-items: center;
 }
 
 .navigation-list {
@@ -170,6 +177,7 @@ address {
   background-color: var(--navy-blue);
   height: 600px;
   margin-bottom: 120px;
+  padding: 188px 0;
 }
 
 .hero .container {
@@ -184,7 +192,6 @@ address {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 496px;
   gap: 48px;
 }
 
@@ -195,13 +202,16 @@ address {
   text-align: center;
   color: var(--white);
   letter-spacing: 0.02em;
+  max-width: 496px;
 }
 
 .hero-btn {
+  display: block;
   border-radius: 4px;
+  border: none;
   padding: 16px 32px;
   min-width: 169px;
-  min-height: 56px;
+  height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: var(--iris);
   font-weight: 500;
@@ -209,6 +219,7 @@ address {
   line-height: 1.5;
   color: var(--white);
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .hero-btn:hover,
@@ -221,6 +232,7 @@ address {
 .features {
   height: 344px;
   margin-bottom: 21px;
+  padding: 120px 0;
 }
 
 .features-container {
@@ -236,13 +248,16 @@ address {
 }
 
 .features-item {
-  width: 260px;
+  width: calc((100% - 72px) / 4);
 }
 
 .features-text {
   color: var(--slate);
 }
 
+.ftitle {
+  margin-bottom: 8px;
+}
 /* ==================== TEAM SECTION ==================== */
 .team {
   background-color: var(--cloud);
@@ -250,6 +265,10 @@ address {
   padding-top: 120px;
   padding-bottom: 120px;
   margin-bottom: 105px;
+}
+
+.team-title {
+  margin-bottom: 72px;
 }
 
 .team-container {
@@ -273,7 +292,7 @@ address {
   gap: 32px;
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px;
-  width: 264px;
+  width: calc((100% - 72px) / 4);
   height: 380px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
@@ -281,12 +300,17 @@ address {
   background: var(--white);
 }
 
+.team-item-block {
+  padding: 32px 0;
+}
+
 .team-item-title {
-  font-weight: 500;
-  font-size: 20px;
-  letter-spacing: 0.02em;
-  line-height: 1.2;
-  color: var(--navy-blue);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.team-item-text {
+  text-align: center;
 }
 
 .gray-line {
@@ -297,21 +321,29 @@ address {
 
 /* ==================== PROTFOLIO SECTION ==================== */
 .portfolio {
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+
 .portfolio-container {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
+
+.portfolio-title {
+  margin-bottom: 72px;
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .portfolio-item {
-  width: 360px;
+  width: calc((100% - 48px) / 3);
   height: 420px;
 }
 
@@ -321,12 +353,15 @@ address {
   justify-content: center;
   flex-direction: column;
   gap: 8px;
-  border-bottom: 1px solid var(--cornflower);
-  border-left: 1px solid var(--cornflower);
-  border-right: 1px solid var(--cornflower);
+  border: 1px solid var(--cornflower);
+  border-top: none;
   padding: 32px 16px;
   width: 360px;
   height: 120px;
+}
+
+.portfolio-item-title {
+  margin-bottom: 8px;
 }
 /* ==================== FOOTER SECTION ==================== */
 
@@ -334,7 +369,7 @@ address {
   height: 312px;
   background: var(--navy-blue);
   color: var(--cloud);
-  padding: 100px 156px;
+  padding: 100px 0;
 }
 
 .footer-container {
@@ -343,7 +378,22 @@ address {
   max-width: 264px;
   gap: 16px;
 }
+.wb_link_footer {
+  margin-bottom: 16px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--iris);
+  font-family: var(--second-family);
+}
 
 .wb_footer {
   color: var(--cloud);
+}
+
+p_footer {
+  max-width: 264px;
 }
