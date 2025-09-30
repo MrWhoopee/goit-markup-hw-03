@@ -117,12 +117,9 @@ button {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  gap: 0px;
 }
 
 .wb_link {
-  display: flex;
-  align-items: center;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -130,6 +127,7 @@ button {
   text-transform: uppercase;
   color: var(--iris);
   font-family: var(--second-family);
+  margin-right: 76px;
 }
 
 .wb {
@@ -138,7 +136,6 @@ button {
 
 .navigation {
   display: flex;
-  gap: 76px;
   align-items: center;
 }
 
